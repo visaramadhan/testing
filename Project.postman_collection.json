@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "e6576688-77f7-4dd0-82ad-f39863e6b38d",
+		"name": "20241129Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39501286",
+		"_collection_link": "https://lumoshive-8617.postman.co/workspace/Lumoshive-Workspace~3742b519-d511-4017-b9e7-1abd32fcec7f/collection/39501286-e6576688-77f7-4dd0-82ad-f39863e6b38d?action=share&source=collection_link&creator=39501286"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "create voucher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/admin/vouchers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"vouchers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete voucher",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/admin/vouchers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"vouchers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update voucher",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/admin/vouchers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"vouchers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list of vouchers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/admin/vouchers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"vouchers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "voucher usages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/admin/vouchers/usages",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"vouchers",
+								"usages"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "list of redeemable vouchers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user/vouchers?type=redeem",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"vouchers"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "redeem"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "redeem a voucher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user/redemptions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"redemptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list of vouchers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vouchers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vouchers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validate a voucher",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vouchers/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vouchers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "apply for a voucher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vouchers/1/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vouchers",
+								"1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list of redeemed vouchers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user/redemptions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"redemptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "voucher usages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user/vouchers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"vouchers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
